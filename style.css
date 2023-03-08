@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #0a192f ;   
+}
+.game-text h2{
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(40px, 8vw, 40px);
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    padding: 20px;
+}
+.game-text h3{
+    color: #222222;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.9rem;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    padding: 5px;
+}
+.container{
+    text-align: center;
+    padding: 20px;
+}
+.container input{
+    border: 2px solid #222222;
+	border-radius: 10px;
+	font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-size: 1.1235rem;
+	padding: 10px;
+	width: 85%;
+    text-align: center;
+    
+}
+.container button{
+    background-color: #0a192f;
+    border: 2px solid #64ffda;
+    color: #ccd6f6;
+    border-radius: 7px;
+    padding: 9px;
+    margin: 20px;
+    width: 55%;
+    font-size: 1.1rem;
+}
+.container button:hover{
+    cursor: pointer;
+    background-color: #8892b0;
+}
+
+.message1, .message2, .message3{
+    color: #ccd6f6;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 1.2rem;
+}
+
+/* HEADER  */
+.header{
+    padding-bottom: 75px;
+}
+.nav-list{
+    
+    box-shadow: 0px 0px 10px (#64ffda);
+    background-color: transparent;
+    margin: 0;
+    padding: 1rem 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-weight:600 ;
+    justify-content: space-evenly;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #ccd6f6;
+    font-size: larger;
+}
+.nav-item a:hover{
+    transition: 400ms;
+    color : #64ffda;
+}
+.nav-item:first-child{
+    font-size: 1.5rem;
+    margin-right: auto;
+    margin-left: 2rem;
+}
+.nav-item:hover{
+    color: #64ffda;
+}
+.nav-item a i:hover{
+    transform: scale(1.6);
+}
+
+.game {
+    position: absolute;
+    width: 50%;
+    max-width: 480px;
+    min-width: 480px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 50px 10px;
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    font-family: "poppins", sans-serif;
+}
+
+
+/* RESPONSIVENESS  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 580px) {
+    body{
+        background: linear-gradient(to right, #7f53ac, #657ced);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 580px) {
+    body{
+        background: linear-gradient(to right, #7f53ac, #657ced);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background: linear-gradient(to right, #7f53ac, #657ced);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background: linear-gradient(to right, #657ced);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background: #0a192f;
+    }
+}
